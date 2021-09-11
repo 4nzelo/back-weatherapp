@@ -2,6 +2,7 @@ const { Router } = require('express');
 const router = new Router();
 const _ = require('underscore');
 
+//const para requerir el archivo
 const cities = require('../weather.json');
 
 router.get('/', (req, res) => {
