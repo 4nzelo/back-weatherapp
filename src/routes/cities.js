@@ -9,7 +9,7 @@ router.get('/', (req, res) => {
     res.json(cities);
 });
 
-router.get('/:name', (req, res) => {
+router.get('/byName/:name', (req, res) => {
     const { name } = req.body;
     let response = [];
     _.each(cities, (citie, i) => {
@@ -20,7 +20,7 @@ router.get('/:name', (req, res) => {
     res.json(response);
 });
 
-router.get('/:cod', (req, res) => {
+router.get('/byCode/:cod', (req, res) => {
     const { cod } = req.params;
     let found = false;
     _.each(cities, (citie, i) => {
