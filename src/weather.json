@@ -8,10 +8,10 @@
         ],
         "base": "stations",
         "main": {
-            "temp": 298.15,
+            "temp": 31,
             "temp_min": 298.15,
             "temp_max": 298.15,
-            "humidity": 73
+            "humidity": 80
         },
         "wind": {
             "speed": 1.5
@@ -21,7 +21,8 @@
             "id": 8590,
             "country": "CO"
         },
-        "name": "Cali",
+        "name": "SANTIAGO DE CALI",
+        "date": "6 Mayo 2021",
         "cod": 200
     },
 
@@ -35,8 +36,8 @@
         "base": "stations",
         "main": {
             "temp": 298.15,
-            "temp_min": 298.15,
-            "temp_max": 298.15,
+            "temp_min": 275.15,
+            "temp_max": 275.15,
             "humidity": 73
         },
         "wind": {
@@ -47,7 +48,8 @@
             "id": 8590,
             "country": "CO"
         },
-        "name": "Barranquilla",
+        "name": "BARRANQUILLA",
+        "date": "6 Mayo 2021",
         "cod": 214
     },
 
@@ -73,7 +75,8 @@
             "id": 8590,
             "country": "CO"
         },
-        "name": "Medellin",
+        "name": "MEDELLIN",
+        "date": "6 Mayo 2021",
         "cod": 220
     }
 
