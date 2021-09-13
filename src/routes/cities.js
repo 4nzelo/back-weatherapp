@@ -2,23 +2,13 @@ const { Router } = require('express');
 const router = new Router();
 const _ = require('underscore');
 
-//const para requerir el archivo
+//const para requerir la data.
 const cities = require('../weather.json');
 
 router.get('/', (req, res) => {
     res.json(cities);
 });
 
-router.get('/byName/:name', (req, res) => {
-    const { name } = req.body;
-    let response = [];
-    _.each(cities, (citie, i) => {
-        if(citie.name == name){
-            response.push(citie);
-         }
-    })
-    res.json(response);
-});
 
 router.get('/byCode/:cod', (req, res) => {
     const { cod } = req.params;
@@ -29,6 +19,18 @@ router.get('/byCode/:cod', (req, res) => {
             found = true;
         }
     })
+});
+
+
+router.get('/byName/:name', (req, res) => {
+    const { name } = req.body;
+    let response = [];
+    _.each(cities, (citie, i) => {
+        if(citie.name == name){
+            response.push(citie);
+         }
+    })
+    res.json(response);
 });
 
 
